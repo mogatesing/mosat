@@ -1,6 +1,7 @@
-# Generate Safety-Critical Scenarios For Testing ADSs in Simulator Based on Influential Traffic Factors
+# MOSAT: Multi-Objective Search-based ADS Testing
 
-This project contains the implementation of CRISCO for constructing virtual scenarios to test Apollo in SVL simulator. CRISCO generates scenarios by extracted influential factors of traffic accidents. 
+This project contains the implementation of MOSAT to test Apollo in SVL simulator. 
+MOSAT applies multi-objective genetic algorithm to generate virtual scenarios which can find safety violations of ADSs.
 
 The generation approach requires the following dependencies to run:
 
@@ -28,14 +29,10 @@ Documentation is available on: https://www.svlsimulator.com/docs/
 
 Website of Apollo: https://apollo.auto/
 
-Installation of Apollo5.0: https://www.svlsimulator.com/docs/system-under-test/apollo5-0-instructions/
+Installation of Apollo6.0: https://www.svlsimulator.com/docs/system-under-test/apollo6-0-instructions/
 
 # Run
-To generate scenarios, execute the main() of generate_test_scenarios.py in generation_scenario directory; to stop the running, please press Ctrl+C until the program exits.
-To replay the recorded safety-violation scenarios, execute the main() of reproduce_all_safety_violations.py in reproduce_safety_violation_scenarios directory(reproduce all generated safety-violation scenarios) or reproduce_scenario.py in reproduce_safety_violation_scenarios directory(reproduce the generated safety-violation scenarios on specified one road type)
+To generate scenarios, execute the main() of start_experiment.py; to stop the running, please press Ctrl+C until the program exits.
+To replay the recorded safety-violation scenarios, execute the main() of replay.py and set the file path of the scenario to be replayed.
 
-# Customize Influential Factors
-Environment: Environment file in UserDefined directory
-Behavior Patterns: BehaviorPatterns file in UserDefined directory
-Accident-prone Area: RoadDistrict file in UserDefined directory
 
