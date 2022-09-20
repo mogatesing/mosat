@@ -32,7 +32,6 @@ Website of Apollo: https://apollo.auto/
 Installation of Apollo6.0: https://www.svlsimulator.com/docs/system-under-test/apollo6-0-instructions/
 
 # Run
-To generate scenarios, execute the main() of start_experiment.py; to stop the running, please press Ctrl+C until the program exits.
 To replay the recorded safety-violation scenarios, execute the main() of replay.py and set the file path of the scenario to be replayed.
 
 
